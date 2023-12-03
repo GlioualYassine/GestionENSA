@@ -15,21 +15,28 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@XmlRootElement
 public class Etudiant {
 
-
     @Id
+    @XmlElement
     private Long cne;
 
+    @XmlElement
     private String nom;
 
+    @XmlElement
     private String prenom;
 
+    @XmlElement
     private String email;
 
+    @XmlElement
     private String motDePasse;
 
+    @XmlElement
     private Integer niveau;
 
+    @XmlElement
     private String urlPhoto;
 }
